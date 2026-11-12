@@ -240,7 +240,7 @@ export const refunds = sqliteTable(
       .notNull()
       .$type<RefundStatus>()
       .default(RefundStatus.Requested),
-    // The learner's own words, in the box on the course page.
+    // The Student's own words, in the box on the course page.
     reason: text("reason").notNull(),
     // Null until someone approves — a declined request refunds nothing.
     amountRefunded: integer("amount_refunded"),
